@@ -1,0 +1,21 @@
+{
+    "name": "laravel/simple-route",
+    "keywords": ["routing"],
+    "description": "A package to create basic routes based or not in locales",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lito",
+            "email": "lito@eordes.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Laravel\\SimpleRoute\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
