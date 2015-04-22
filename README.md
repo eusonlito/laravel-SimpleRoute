@@ -29,7 +29,7 @@ Begin by installing this package through Composer.
 
 'aliases' => [
     '...',
-    'SimpleRoute' => 'Laravel\SimpleRoute',
+    'SimpleRoute' => 'Laravel\SimpleRoute\SimpleRoute',
 ];
 ```
 
