@@ -33,7 +33,7 @@ Begin by installing this package through Composer.
 ];
 ```
 
-#### app/Controllers/Http/routes.php
+#### app/Http/routes.php
 
 ```php
 SimpleRoute::get('web.index'); // Controller `Web` method `index`
