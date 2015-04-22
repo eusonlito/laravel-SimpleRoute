@@ -9,7 +9,7 @@ Begin by installing this package through Composer.
 ```js
 {
     "require": {
-        "laravel/simple-route": "1.*"
+        "laravel/simple-route": "0.*"
     }
 }
 ```
