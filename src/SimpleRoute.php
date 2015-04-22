@@ -56,11 +56,9 @@ class SimpleRoute
         foreach (array_keys(config('app.locales')) as $locale) {
             $file = $path.'/'.$locale.'/'.self::$file;
 
-            if (!is_file($file)) {
-                continue;
+            if (is_file($file)) {
+                self::$routes[$locale] = require $file;
             }
-
-            self::$routes[$locale] = require $file;
         }
 
         return self::$routes;
