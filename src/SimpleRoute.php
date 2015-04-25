@@ -49,12 +49,16 @@ class SimpleRoute
 
     private static function getLocales()
     {
-        if ($locales = config('gettext.locales')) {
+        if (!$config = config('gettext')) {
+            $config = config('app');
+        }
+
+        if (array_key_exists('locales', $config)) {
             $locales = array_unique(array_map(function($locale) {
                 return strtolower(preg_replace('/_*/', '', $locale));
-            }, $locales));
-        } elseif (!($locales = config('app.locales'))) {
-            $locales = [config('app.locale')];
+            }, $config['locales']));
+        } else {
+            $locales = [$config['locale']];
         }
 
         return $locales;
