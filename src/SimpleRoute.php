@@ -47,13 +47,26 @@ class SimpleRoute
         return self::loadRoutes();
     }
 
+    private static function getLocales()
+    {
+        if ($locales = config('gettext.locales')) {
+            $locales = array_unique(array_map(function($locale) {
+                return strtolower(preg_replace('/_*/', '', $locale));
+            }, $locales));
+        } elseif (!($locales = config('app.locales'))) {
+            $locales = [config('app.locale')];
+        }
+
+        return $locales;
+    }
+
     private static function loadRoutes()
     {
         $path = self::getLangPath();
 
         self::$routes = [];
 
-        foreach (array_keys(config('app.locales')) as $locale) {
+        foreach (self::getLocales() as $locale) {
             $file = $path.'/'.$locale.'/'.self::$file;
 
             if (is_file($file)) {
