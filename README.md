@@ -19,13 +19,7 @@ Begin by installing this package through Composer.
 #### config/app.php
 
 ```php
-'locale' => 'en',
-'locales' => [
-    'en' => 'en_US',
-    'es' => 'es_ES',
-    'fr' => 'fr_FR',
-    'it' => 'it_IT'
-],
+'locales' => ['en', 'es', 'fr', 'it'],
 
 'aliases' => [
     '...',
