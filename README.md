@@ -1,6 +1,6 @@
 # Laravel 5 SimpleRoute
 
-Package to generate simple multilanguage (or not) routes to Laravel
+Package to generate simple multilanguage routes to Laravel
 
 ## Installation
 

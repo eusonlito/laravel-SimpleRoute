@@ -1,7 +1,7 @@
 {
     "name": "laravel/simple-route",
     "keywords": ["routing"],
-    "description": "A package to create basic routes based or not in locales",
+    "description": "A package to create basic routes based in locales",
     "license": "MIT",
     "authors": [
         {
