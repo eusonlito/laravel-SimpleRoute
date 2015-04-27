@@ -54,7 +54,7 @@ class SimpleRoute
         }
 
         if (array_key_exists('locales', $config)) {
-            $locales = array_unique(array_map(function($locale) {
+            $locales = array_unique(array_map(function ($locale) {
                 return strtolower(preg_replace('/_.*$/', '', $locale));
             }, $config['locales']));
         } else {
