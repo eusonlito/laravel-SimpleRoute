@@ -1,6 +1,5 @@
 <?php
-
-namespace Laravel\SimpleRoute;
+namespace Eusonlito\LaravelSimpleRoute;
 
 use Exception;
 use Lang;

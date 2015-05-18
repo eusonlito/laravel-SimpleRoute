@@ -1,5 +1,5 @@
 {
-    "name": "laravel/simple-route",
+    "name": "eusonlito/laravel-simple-route",
     "keywords": ["routing"],
     "description": "A package to create basic routes based in locales",
     "license": "MIT",
@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Laravel\\SimpleRoute\\": "src/"
+            "Eusonlito\\LaravelSimpleRoute\\": "src/"
         }
     },
     "minimum-stability": "stable"
