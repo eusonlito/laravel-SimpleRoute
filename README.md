@@ -9,7 +9,7 @@ Begin by installing this package through Composer.
 ```js
 {
     "require": {
-        "laravel/simple-route": "0.*"
+        "eusonlito/laravel-simple-route": "0.*"
     }
 }
 ```
@@ -23,7 +23,7 @@ Begin by installing this package through Composer.
 
 'aliases' => [
     '...',
-    'SimpleRoute' => 'Laravel\SimpleRoute\SimpleRoute',
+    'SimpleRoute' => 'Eusonlito\LaravelSimpleRoute\SimpleRoute',
 ];
 ```
 
